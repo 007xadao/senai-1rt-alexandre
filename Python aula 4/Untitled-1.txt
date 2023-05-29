@@ -1,0 +1,45 @@
+def somar(a, b):
+    return a + b
+
+def multiplicar(a, b)
+    return a * b
+
+def maior_numero(a, b)
+    if a > b:
+       return a
+    else:
+       return b
+
+def menor_numero(a, b) 
+    if a <  b:
+       return a
+    else:
+       return b                   
+
+# Função para exibir o menu
+
+def exibir_menu():
+    print("Menu:")
+    print("a. Somar")
+    print("b. Multiplicar")
+    print("c. Maior numero")
+
+# Programa Principal
+
+valor1 = float(input("Digite o primeiro valor: "))
+valor2 = float(input("Digite o segundo valor: "))
+
+if opcao == "a" :
+    resultado = somar(valor1, valor2)
+    print("Resultado da soma:", resultado)
+elif opcao == "b" :
+    resultado = maior_numero(valor1, valor2)
+    print("Resultado da multiplicacao:", resultado)   
+elif opcao == "c" :
+    resultado = maior_numero(valor1, valor2)
+    print("Maior_numero:", resultado)    
+elif opcao == "d" :
+    resultado = menor_numero(valor1, valor2)
+    print("Menor numero:", resultado)
+else:
+    print("Opçao invalida")    

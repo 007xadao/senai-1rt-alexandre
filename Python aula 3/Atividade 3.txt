@@ -1,0 +1,116 @@
+
+Atividade 3 (24/05/2023)
+
+1)
+
+idade = int(input("Informe sua idade: "))
+
+if idade >= 18:
+    print("Maior de idade")
+else: 
+    print("Menor de idade ")
+
+___________________________________________________________________________
+
+2)
+
+velocidade_do_carro = float (input ("insira a velocidade do carro: "))
+limite_de_velocidade = 80 # limite de velocidade em Km/h
+
+if velocidade_do_carro > limite_de_velocidade:
+    print("Voce foi multado. Reduza a velocidade!")
+else:
+    print("Voce esta dentro do limite de velocidade.Dirija com seguranca!") 
+    
+____________________________________________________________________________
+
+3)
+
+salario = float(input("Informe seu salario: "))
+if salario > 8250:
+    novosalario = salario + (salario *0.10)
+else:
+    novosalario = salario + (salario * 0.15)    
+
+print("seu novo salario e de:",novosalario)
+
+____________________________________________________________________________
+
+4)
+distancia = float (input("Digite a distancia da viagem em km: "))
+
+if distancia <= 200:
+    preco_passagem = distancia * 0.50 # R$ 0.50 por Km para viagens ate 200 km
+else:
+    preco_passagem = distancia * 0.45 # R$ 0.45 por Km para vuagens acima de 200 Km
+
+print (f"O preco da passagem e R$ {preco_passagem:.2f}.")
+
+_______________________________________________________________________________________
+
+5)
+
+numero = int (input("Digite um numero inteiro:"))
+
+if numero % 2 == 0:
+    print("O numero e par.")
+else:
+    print("o numero e impar.")    
+
+__________________________________________________________________________________________
+
+6)
+velocidade = float(input("Digite a velocidadedo carro em Km/h: "))
+
+limite_velocidade = 80
+valor_multa_por_kM = 7.00
+
+if velocidade > limite_velocidade: 
+   velocidade_excedida = velocidade - limite_velocidade
+   valor_da_multa = velocidade_excedida * valor_multa_por_kM
+   print("Voce foi multado!")
+   print("Velocidade excedida: {:.2f} Km/h".format(velocidade_excedida))
+   print("Valor da multa: R$ {:.2f}".format(valor_da_multa))
+else:
+   print("Voce esta dentro do limite de velocidade. ")
+__________________________________________________________________________________________
+
+7)
+valor1 = float (input("Digite o primeiro valor: "))
+valor2 = float (input("Digite o segundo valor: "))
+
+print("Escolha a operação:")
+print("1 - Adiçao")
+print("2 - Subtração")
+print("3 - Divisão")
+print("4 - Multiplicação")
+
+opcao = int(input("Digite o numero da operaçao desejada:"))
+if opcao == 1:
+    resultado = valor1 + valor2
+    operacao = "adiçao"
+elif opcao == 2:
+    resultado = valor1 - valor2
+    operacao = "Subtração"
+elif opcao == 3:
+    resultado = valor1 / valor2
+    operacao = "divisão"
+elif opcao == 4:
+    resultado = valor1 * valor2
+    operacao = "multiplicação"        
+else:
+    print("Opção invalida.")
+    exit()
+print("Resultado da {} entre {} e {}: {}".format(operacao, valor1, valor2, resultado))
+nota = int(input("Informe a nota do participante: "))
+if nota <= 50:
+    print("Certificado de Participação")
+elif nota <= 60:
+    print("Certificado de Menção Honrosa")
+elif nota <= 70:
+    print("Medalha de Bronze") 
+elif nota <= 90:
+    print("Medalha de Prata")
+else:
+    print("Medalha de ouro")   
+       

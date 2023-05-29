@@ -1,0 +1,102 @@
+Atividade 5
+
+1) 
+def area(lg, cm):
+    total = lg * cm
+    return total
+
+lg = float(input("Digite a largura do terreno em metros:"))
+Cm = float(input("Digite o comprimento do terreno em metros"))
+
+
+print("A area do terreno e:",area(lg, Cm),"metros quadrados.")
+
+_______________________________________________________________________________________
+2)
+
+from time import sleep
+def contagem_rergressiva(nu) :
+
+    while nu > 0:
+        nu = nu -1
+        print(nu)
+        sleep(1)
+
+p = int(input("Declare o valor inicial:"))        
+
+contagem_rergressiva(p)
+
+________________________________________________________________________________________
+
+3)
+
+def maior(n1, n2, n3):
+    num = n1, n2, n3
+    return max(num)
+
+a = int(input("valor um:"))
+b = int(input("valor dois:"))
+c= int (input("valor tres:"))
+
+print("O valor e:",maior(a, b, c))       
+ 
+___________________________________________________________________________________________
+
+4)
+
+def identificador(num):
+    if num % 2 == 0 :
+        print("O numero", num,"e par.")
+    else:
+        print("O numero",num,"e impar")   
+n = int(input("Digite um numero:"))
+print(identificador(n))         
+
+
+____________________________________________________________________________________________
+5)
+def somar(a, b):
+    return a + b
+
+def multiplicar(a, b)
+    return a * b
+
+def maior_numero(a, b)
+    if a > b:
+       return a
+    else:
+       return b
+
+def menor_numero(a, b) 
+    if a <  b:
+       return a
+    else:
+       return b                   
+
+# Função para exibir o menu
+
+def exibir_menu():
+    print("Menu:")
+    print("a. Somar")
+    print("b. Multiplicar")
+    print("c. Maior numero")
+
+# Programa Principal
+
+valor1 = float(input("Digite o primeiro valor: "))
+valor2 = float(input("Digite o segundo valor: "))
+
+if opcao == "a" :
+    resultado = somar(valor1, valor2)
+    print("Resultado da soma:", resultado)
+elif opcao == "b" :
+    resultado = maior_numero(valor1, valor2)
+    print("Resultado da multiplicacao:", resultado)   
+elif opcao == "c" :
+    resultado = maior_numero(valor1, valor2)
+    print("Maior_numero:", resultado)    
+elif opcao == "d" :
+    resultado = menor_numero(valor1, valor2)
+    print("Menor numero:", resultado)
+else:
+    print("Opçao invalida")    
